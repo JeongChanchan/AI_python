@@ -1,0 +1,26 @@
+def grade(score):
+    grade=''
+    if score >= 90:
+        grade = 'A'
+    elif score >= 80:
+        grade = 'B'
+    elif score >= 70:
+        grade = 'C'
+    elif score >= 60:
+        grade = 'D'
+    else:
+        grade = 'F'
+    return grade
+    
+
+while 1:
+    score = input('종료0 | 점수> ')
+    if  not score.isnumeric():
+        print('숫자를 입력하세요')
+        continue 
+    elif score == '0':
+        print('프로그램을 종료합니다.')
+        break
+    else:
+        grade = grade(int(score))
+        print(grade)

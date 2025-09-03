@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습03</title>
+
+    <style>
+        * {
+            font-family: "Nanum Pen Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 100px;
+        }
+
+        div {
+            margin: 10px auto;
+            font-size: 20px;
+            width: 500px;
+        }
+
+        form {
+            border: 3px double green;
+            padding: 20px;
+            width: 520px;
+            margin: 0 auto;
+            background-color: #f0fff0;
+            box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        span {
+            display: inline-block;
+            width: 100px;
+            background-color: greenyellow;
+            padding: 2px;
+            margin: 1px;
+        }
+
+        input[type='text'],
+        input[type='password'],
+        select {
+            padding: 5px 20px;
+            border-radius: 5px;
+            border: 1px solid green;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .bottons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        input[type='text']:focus{
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>회원가입</h1>
+    <form>
+        <div>
+            <span>아이디: </span>
+            <input type="text">
+        </div>
+
+        <div>
+            <span>비밀번호: </span>
+            <input type="password">
+        </div>
+
+        <div>
+            <span>직업: </span>
+            <select>
+                <option selected>프로그래머</option>
+                <option>의사</option>
+                <option>변호사</option>
+                <option>기타</option>
+            </select>
+        </div>
+
+        <div>
+            <span>성별: </span>
+            <input type="radio" name="gender" checked>남
+            <input type="radio" name="gender">여
+        </div>
+
+        <div>
+            <span>취미: </span>
+            <input type="checkbox">독서
+            <input type="checkbox">영화
+            <input type="checkbox">운동
+            <input type="checkbox" checked>게임
+        </div>
+
+        <div class="bottons">
+            <input type="submit" value="회원가입">
+            <input type="reset" value="가입취소">
+        </div>
+    </form>
+</body>
+
+
+</html>

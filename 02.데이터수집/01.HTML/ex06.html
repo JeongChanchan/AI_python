@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습06</title>
+
+    <style>
+
+        *{
+            font-family: "Nanum Pen Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        button{
+           font-size: 30px;
+        }
+
+        #div{
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <button id="btn1">1~100까지 합</button>
+
+    <button id="btn2">1~100까지 짝수합</button>
+
+    <button id="btn3">1~100까지 홀수합</button>
+
+    <div id="result"><h1>결과</h1></div>
+
+</body>
+<script>
+    $("#btn1").on("click", function(){
+        sum = 0;
+        for (i=1; i< 101; i++) {
+            sum = sum + i;
+        }
+        $("#result").html(sum)
+    });
+
+    $("#btn2").on("click", function(){
+        sum = 0;
+        for (i=0; i< 101; i=i+2) {
+            sum = sum + i;
+        }
+        $("#result").html(sum)
+    });
+
+    $("#btn3").on("click", function(){
+        sum = 0;
+        for (i=1; i< 101; i=i+2) {
+            sum = sum + i;
+        }
+        $("#result").html(sum)
+    });
+</script>
+</html>

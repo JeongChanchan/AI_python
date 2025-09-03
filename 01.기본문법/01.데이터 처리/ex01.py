@@ -1,0 +1,6 @@
+print(3)
+print('hello', type('hello'))
+print(3.5,type(3.5))
+print(True,type(True))
+
+print('*' * 10)

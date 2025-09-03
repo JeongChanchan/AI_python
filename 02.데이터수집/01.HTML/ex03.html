@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습03</title>
+
+    <style>
+
+     
+        *{
+            font-family: "Nanum Pen Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        table{
+            width: 500px;
+            margin: 100px auto;
+            border-collapse: collapse;
+        }
+
+        #num{
+            width: 200px;
+            margin: 100px auto;
+            border-collapse: collapse;
+        }
+
+
+        table tr:nth-child(n){
+            background-color: burlywood;
+            color: black;
+        }
+
+        table tr:first-child{
+            text-align: center;
+            background-color: white;
+            color: black;
+        }
+
+        td {
+            border: 3px solid darkred;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td>학번</td>
+            <td width ="100">이름</td>
+            <td width ="300">주소</td>
+
+        </tr>
+
+        <tr>
+            <td>01</td>
+            <td width ="100">홍길동</td>
+            <td width ="300">서울시 강남구</td>
+
+        </tr>
+
+        <tr>
+            <td>02</td>
+            <td width ="100">심청이</td>
+            <td width ="300">광명시 철산동</td>
+
+        </tr>
+
+        <tr>
+            <td>01</td>
+            <td width ="100">강감찬</td>
+            <td width ="300">서울시 강서구</td>
+
+        </tr>
+
+        <tr>
+            <td>02</td>
+            <td width ="100">이순신</td>
+            <td width ="300">광명시 하안동</td>
+
+        </tr>
+
+    </table>
+
+    <table>
+        <tr>
+            <td colspan="2">지역별 홍차</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">중국</td>
+            <td>정산소종</td>
+        </tr>
+
+        <tr>
+            <td>기문</td>
+        </tr>
+
+        <tr>
+            <td>운남</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">인도 및 스리랑카</td>
+            <td>아삼</td>
+        </tr>
+
+        <tr>
+            <td>실론</td>
+        </tr>
+
+        <tr>
+            <td>닐기리</td>
+        </tr>
+
+        <tr>
+            <td>다질링</td>
+        </tr>
+
+    </table>
+
+
+    <table id="num">
+        
+        <tr>
+            <td colspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td rowspan="2">5</td>
+            <td rowspan="2" colspan="2"> 6</td>
+        </tr>
+        <tr>
+            <td colspan="2">7</td>
+        </tr>
+        <tr>
+            <td rowspan="2">8</td>
+            <td>9</td>
+            <td colspan="3">10</td>
+            
+        </tr>
+        <tr>
+            <td colspan="3">11</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
