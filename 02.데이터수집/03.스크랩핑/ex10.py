@@ -15,3 +15,5 @@ print(temp)
 
 temperature = soup.find('span', attrs={'class':'temperature_inner'}).span.contents[1]
 print(temperature)
+
+print('[오늘날씨]')
